@@ -11,3 +11,13 @@
 # то вывести строку "Такого этажа не существует".
 
 class House:
+    def __init__(self,name,number_of_floors ):
+        self.name = name
+        self.number_of_floors  = number_of_floors
+        self.say_house()
+
+    def say_house(self):
+        print(f'Название - {self.name}, количество этажей - {self.number_of_floors}')
+
+h1 = House("ЖК Горский", 18)
+h2 = House("Домик в деревне", 2)
